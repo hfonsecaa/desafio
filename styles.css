@@ -2,12 +2,10 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Fjalla One', sans-serif;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-body{
-    background: red;
-}
+
 
 nav {
     background-color: #ff6d8a;
@@ -15,8 +13,32 @@ nav {
     border-bottom: 5px solid #d18594;
     display: flex;
     font-size: 40px;
-    width: 100vw;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
+
+.icone-drop{
+    display: none;
+}
+
+.icone-drop img{
+    width: 10px;
+}
+
+.hide {
+    display: none;
+    width: 50%;
+}
+
+.nav2{
+    height: auto;
+}
+
+.nav2 ul{
+    flex-direction: column;
+}
+
 
 nav img {
     width: 126px;
@@ -28,71 +50,714 @@ nav img {
 nav ul {
     display: flex;
     list-style: none;
+    text-align: center;
     align-items: center;
-    padding-left: 100px;
+
 
 }
 
 nav ul li {
     padding-left: 40px;
     padding-right: 40px;
+    padding-left: 122.5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: white;
 
 }
 
 /* .home {
-
+    background-color: #a8e280;
+    background-image: url(./imagens/1312821.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1200px;
+    justify-content: center;
     position: relative;
-}
+} */
 
-.home h2 {
-    position: absolute;
-    top: 100px;
-    left: 803.75px;
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-
-}
-
-.home h1 {
-    position: absolute;
-    top: 160px;
-    left: 778.19px;
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-
-}
-
-.home .retangulo {
+/* 
+.retangulo {
     height: 150px;
     width: 390px;
     background-color: #ff6d8a;
-    border-radius: 20%;
+    border-radius: 30%;
+    /* position: absolute; */
+/* top: 85px;
+    left: 751.5px;
+    border: 5px solid rgb(0, 0, 0);
+} */
+
+/* .retangulo h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+} */
+
+/* .retangulo h2 {
+    font-size: 50px;
+    text-align: center;
+} */
+
+/* .home .fundohome {
+    width: 1903px;
+
+} */
+
+/* .home1 {
+    height: 800px;
     position: absolute;
-    top: 85px;
-    left: 750px;
+    top: 300px;
+    left: 546.5px;
+    border: 5px solid black;
+
+} */
+
+.home {
+    background-image: url(./imagens/1312821.webp);
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.home img {
+    margin-top: 30px;
+    width: 400px;
+    border: 4px solid black;
+}
+
+
+.retangulo {
+    margin-top: 50px;
+    background-color: #ff6d8a;
+    text-align: center;
+    align-items: center;
+    height: 150px;
+    width: 390px;
+    border-radius: 30%;
     border: 5px solid rgb(0, 0, 0);
 }
 
-.home .fundohome{
-    width: 100vw;
-    border: 2px solid black;
+.retangulo h1 {
     
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.home .home1{
-    height: 100%;
-    position: absolute;
-    top: 300px;
-    left: 545px;
-    border: 5px solid black;
+.retangulo h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.containerloc {
+    background-color: #ce687cf1;
+
+}
+
+.loc {
+    background-color: #f397aa;
+    height: 480px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    border-top: 4px solid #ffc24f;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+
+.loc img {
+    width: 550px;
+    border: 3px solid black;
+
+}
+
+.retanguloloc {
+    height: 300px;
+    width: 390px;
+    border-radius: 30px;
+    background-color: #a8e280;
+    border: 3px solid black;
+}
+
+.retanguloloc h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.retanguloloc p {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.quemsomos {
+    background-color: #a6d5d1;
+    height: 500px;
+}
+
+
+
+.containerquem {
+    background-color: #80a5a2;
+}
+
+.quemsomos {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.imgquemsomos {
+    display: grid;
+    grid-template-columns: 300px 300px;
+
+}
+
+.quemsomos img {
+    width: 200px;
+    border: 3px solid black;
+}
+
+.retanguloquemsomos {
+    background-color: #f397aa;
+    border: 3px solid black;
+    height: 300px;
+    width: 390px;
+    border-radius: 30px;
+}
+
+.retanguloquemsomos {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.retanguloquemsomos p {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.containerservicos {
+    background-color: #bd8f3a;
+
+}
+
+.servicos {
+    background-color: #ffc24f;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.servicos h1 {
+    font-size: 40px;
+}
+
+.servicos p {
+    font-size: 25px;
+}
+
+.servicosimg {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+
+
+.servicosimg img {
+    width: 300px;
+}
+
+.containerparceiros {
+    background-color: #78a15c;
+}
+
+.parceiros {
+    background-color: #a8e280;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+
+}
+
+.parceiros h1 {
+    padding-bottom: 30px;
+
+}
+
+
+.carrossel {
+    /* margin-left: 650px;
+    margin-right: 650px; */
+    padding-left: 10%;
+    padding-bottom: 30px;
+
+}
+
+
+.carrossel img {
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.containercontato {
+    background-color: rgb(161, 149, 130);
+
+}
+
+.contato h1 {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    background-color: blanchedalmond;
+}
+
+.containercontato{
+    width: 100%;
+}
+
+.formulario {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+.formulario input {
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.formulario textarea{
+    width: 50%;
+    height: 60px;
+    border-radius: 15px;
+    padding-left: 10px;
+
+}
+
+.formulario h2 {
+    margin-top: 10px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+
+
+.submit input{
+    margin-bottom: 40px;
+    margin: 0px;
+    height: 30px;
+    width: 30%;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: #e9c256;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* .formulario {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 40px 70px 40px;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    background-color: blanchedalmond;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 200px;
+    padding-right: 270px;
+}
+
+.formulario input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.formulario2 {
+    text-align: center;
+    background-color: blanchedalmond;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-bottom: 40px;
+}
+
+.formulario2 h2 {
+    padding-bottom: 0px;
+}
+
+.formulario2 input {
+    width: 500px;
+    font-size: 20px;
+}
+
+.submit {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: blanchedalmond;
+    padding-bottom: 40px;
 } */
 
-.fundohome{
-    /* width: 100vw;
-    margin: 0px;
-    padding: 0px; */
+.containerapp {
+    background-color: #bd8f3a;
 }
 
-.retangulo{
-    background-color: #ff6d8a;
+.app {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #946038;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
+
+.app h2 {
+    padding-top: 20px;
+}
+
+.app img {
+    width: 200px;
+
+}
+
+.containerrodape {
+    background-color: #be5167;
+}
+
+.rodape {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #ff6d8a;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+/* @media (max-width: 900px) {
+
+
+
+    nav {
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    nav ul li {
+        padding-left: 45px;
+        padding-right: 15px;
+    }
+
+    .retangulo {
+        left: 700px;
+    }
+
+
+    .loc {
+        margin: 0px;
+    }
+
+    .loc img {
+        width: 400px;
+    }
+
+    .quemsomos {
+
+        margin: 0px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 400px;
+    }
+
+    .quemsomos img {
+        padding-top: 40px;
+        padding-left: 50px;
+        border: none;
+    }
+
+    .retanguloquemsomos {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .servicos {
+        margin: 0px;
+    }
+
+    .servicosimg {
+        display: grid;
+        grid-template-columns: 170px 170px 170px 170px;
+    }
+
+    .parceiros {
+        margin: 0px;
+    }
+
+
+    .contato h1 {
+        margin: 0px;
+    }
+
+    .formulario {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 220px 220px;
+        padding-top: 20px;
+    }
+
+    .formulario2 {
+        margin: 0px;
+    }
+
+    .submit {
+        margin: 0px;
+    }
+
+    .app {
+        margin: 0px;
+    }
+
+    .app h2 {
+        padding-right: 40px;
+    }
+
+    .app img {
+        padding-left: 40px;
+    }
+
+    .carrossel{
+        padding-left: 150px;
+    }
+}
+
+
+@media (max-width: 500px){
+
+    nav{
+        height: 70px;
+        font-size: 17px;
+    }
+
+    nav img{
+        width: 50px;
+        height: 50px;
+    }
+
+    nav ul li{
+        padding-left: 0px;
+    }
+
+    .loc img{
+        display: flex;
+        width: 250px;
+    }
+
+    .retanguloloc h1{
+        font: 10px;
+        padding-top: 0px;
+    }
+
+    .formulario{
+        width: 50px;
+    }
+
+    .formulario2 input{
+        width: 450px;
+    }
+
+
+    .app h2{
+        padding-right: 150px;
+    }
+
+    .app img{
+        padding-right: 280px;
+    }
+} */
+
+
+@media (max-width: 1000px) {
+
+    nav {
+        justify-content: space-between;
+    }
+
+
+    .navul{
+        display: none;
+    }
+
+    
+
+
+    .loc {
+        flex-direction: column;
+        margin: 2.5%;
+        height: auto;
+        padding-top: 20px;
+    }
+
+
+
+    .loc img {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .quemsomos {
+        flex-direction: column;
+        margin: 2.5%;
+        height: auto;
+    }
+
+    .imgquemsomos {
+        flex-direction: column;
+        padding-top: 10px;
+        grid-template-columns: 200px 200px;
+    }
+
+    .servicos {
+        margin: 2.5%;
+    }
+
+    .servicosimg {
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+
+    .servicosimg img {
+        width: 100px;
+    }
+
+    .parceiros {
+        margin: 2.5%;
+
+    }
+
+    .carrossel h1 {
+        width: 50%;
+
+    }
+
+    .carrossel {
+        margin-left: 14%;
+        padding-left: 0px;
+        
+    }
+
+    .formulario {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        align-items: center;
+
+        padding: 0px;
+    }
+
+    .formulario input {
+        width: 80%;
+    }
+
+    .formulario textarea{
+        width: 80%;
+    }
+
+    .formulario h2 {
+        margin-top: 10px;
+    }
+
+    .submit input{
+        margin: 0px;
+        height: 30px;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 15px;
+        background-color: #e9c256;
+    }
+
+ 
+
+
+    .contato h1{
+        width: 100%;
+        margin: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .containercontato{
+        background-color: #ffebcd;
+    }
+
+    .app{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .containerapp{
+        width: 100%;
+
+    }
+
+    .icone-drop{
+        display: block;
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+
+}
+
